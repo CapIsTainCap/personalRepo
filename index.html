@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Font Links-->
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+        
+        <!--Meta Elements-->
+        <title>
+            Personal Portfolio
+        </title>
+        <meta charset="utf-8">
+
+        <!--CSS-->
+        <style>
+            body {
+                font-family: 'Comfortaa', 'Montserrat', 'Century Gothic', monospace;
+                background: linear-gradient(125deg, #CCFFFF, #FFCCCC)
+            }
+
+            .name-img-div {
+                background: rgb(44, 40, 40);
+                padding-bottom: 10px;
+                border-radius: 5px;
+            }
+
+            .name-intro {
+                background: rgb(22, 19, 19);
+                text-align: center;
+                margin-top: 10%;
+                font-size: 50px;
+                color: white;
+                padding-bottom: 5px;
+                border-radius: 5px;
+                transform: translateY(-70px);
+                font-family: 'Century Gothic';
+            }
+
+            .profile-pic {
+                width: 30%;
+                margin-left: 35%;
+                border-radius: 20px;
+                transform: translateY(-30px);
+                transition: 0.3s;
+            }
+
+            .profile-pic:hover {
+                opacity: 0.7;
+                transform: translateY(-22px);
+                transition: 0.3s;
+            }
+
+            .desc {
+                color: white;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            .achievements {
+                color: white;
+                text-align: center;
+            }
+
+            .flex-imgs {
+                display: flex;
+                justify-content: space-evenly;
+                transition: 0.3s;
+            }
+
+            .flex-h3s {
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .html-img, .javascript-img, .css-img {
+                transition: 0.3s;
+            }
+
+            .html-img:hover, .javascript-img:hover, .css-img:hover {
+                opacity: 0.7;
+                transform:translateY(-2px);
+                transition: 0.3s;
+            }
+
+            .footer-div {
+                background: rgb(11, 6, 27);
+                color: white;
+                text-align: center;
+                padding: 10px;
+                transform: translateY(-24px);
+            }
+
+            .span1 {
+                animation-name: nameani;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                background: linear-gradient(105deg, #CCFFFF, #FFCCCC);
+                color: black;
+                border-radius: 20px;
+                cursor: default;
+                position: relative;
+            }
+
+            @keyframes nameani {
+                0% {
+                    left: 0px;
+                }
+                50% {
+                    left: 10px;
+                }
+                100% {
+                    left: 0px;
+                }
+            }
+
+            a {
+                color: cyan;
+                text-decoration: none;
+                transition: 0.3s;
+            }
+            
+            a:hover {
+                opacity: 0.7;
+                transition: 0.3s;
+            }
+
+            .mw {
+                width: 15%;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Main-Container Start-->
+        <div class="main-container">
+
+            <div class="name-img-div">
+
+                <!--Name Intro Div-->
+                <div class="name-intro">
+                    Hi, I'm <span class = "span1">Pratik!</span>
+                </div>
+                <br>
+                <!--Image Intro Div-->
+                <div class="image-intro">
+                    <img class="profile-pic" src="KeyBoard.jpg"  title="That's Me!" alt="My Picture Here">
+                </div>
+                <br>
+                <!--Desc Div-->
+                <div class="desc">
+                    Hello, I'm a Web Developer who is learning HTML, CSS, and JavaScript on <a href="https://www.freecodecamp.org/learn">freeCodeCamp</a>
+                    <br>
+                    I like to read, and use my spare time to play games. 
+                </div>
+                <br>
+                <hr>
+                <br>
+                <!--Achievements and What I'm learning div-->
+                <div class="achievements">
+                    I'm Learning: 
+                    <br>
+                    <br>
+                    <div class="flex-imgs">
+                        <img class="html-img mw" src="html.png" title="HTML Logo" alt="HTML Logo">
+                        <img class="css-img mw" src="css.png" title="CSS Logo" alt="CSS Logo">
+                        <img class="javascript-img mw" src="javascript.png" title="JavaScript Logo" alt="JavaScript Logo">
+                    </div>
+                    <div class="flex-h3s">
+                        <h3>HTML</h3>
+                        <h3>CSS</h3>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <br>
+            <div class="footer-div">
+                <footer>
+                    Made By <a href="https://www.twitter.com/PratikDeore17">@PratikDeore17</a> With <3
+                </footer>
+            </div>
+        </div>
+        <!--Main-Container End-->
+    </body>
+</html>
